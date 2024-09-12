@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/lblContactItemPhone"
+        android:layout_width="261dp"
+        android:layout_height="105dp"
+        android:layout_marginEnd="16dp"
+        android:text="TextView"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnEditContactItem"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="11dp"
+        tools:text="prueba de texto" />
+
+    <ImageButton
+        android:id="@+id/btnDeleteContactItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03"
+        app:srcCompat="@android:drawable/ic_menu_delete" />
+
+    <ImageButton
+        android:id="@+id/btnEditContactItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/btnDeleteContactItem"
+        app:layout_constraintTop_toTopOf="@+id/btnDeleteContactItem"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+    <ImageButton
+        android:id="@+id/btnColorContactItem"
+        android:layout_width="56dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDeleteContactItem"
+        app:srcCompat="@android:drawable/ic_notification_overlay" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
